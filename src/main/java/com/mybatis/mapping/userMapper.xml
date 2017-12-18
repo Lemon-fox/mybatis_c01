@@ -16,4 +16,22 @@
         resultType="com.mybatis.domain.User">
         select * from users01 where id=#{id}
     </select>
+    <!-- 创建用户Create -->
+    <insert id="addUser" parameterType="com.mybatis.domain.User">
+    	insert into users01(name,age) values(#{name},#{age})
+    </insert>
+    <!-- 删除用户Remove -->
+    <delete id="delteUser" parameterType="int">
+    	delete from users01 where id=#{id}
+    </delete>
+    <!-- 修改用户updates -->
+    <update id="updateUser" parameterType="com.mybatis.domain.User">
+    	update users01 set name=#{name},age=#{age} where id=#{id}
+    </update>
+    <!-- 查询全部用户 -->
+    <select id="getAllUsers" resultType="com.mybatis.domain.User">
+    	select * from Users01
+    </select>
+    
+    
 </mapper>

@@ -27,6 +27,7 @@
 	<mappers>
 	<mapper resource="com/mybatis/mapping/userMapper.xml" />
 	<mapper class="com.mybatis.mapping.UserMapperI" />
+	<mapper resource="com/mybatis/mapping/orderMapper.xml"/>
 	</mappers>
 
 	

@@ -28,6 +28,8 @@
 	<mapper resource="com/mybatis/mapping/userMapper.xml" />
 	<mapper class="com.mybatis.mapping.UserMapperI" />
 	<mapper resource="com/mybatis/mapping/orderMapper.xml"/>
+	<mapper resource="com/mybatis/mapping/classMapper.xml" />
+	<mapper resource="com/mybatis/mapping/classMapper2.xml" />
 	</mappers>
 
 	

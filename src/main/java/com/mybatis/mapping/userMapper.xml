@@ -20,6 +20,9 @@
     <insert id="addUser" parameterType="com.mybatis.domain.User">
     	insert into users01(name,age) values(#{name},#{age})
     </insert>
+        <insert id="addUser2" parameterType="_User">
+    	insert into users01(name,age) values(#{name},#{age})
+    </insert>
     <!-- 删除用户Remove -->
     <delete id="delteUser" parameterType="int">
     	delete from users01 where id=#{id}

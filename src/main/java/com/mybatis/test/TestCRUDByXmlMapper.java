@@ -26,6 +26,22 @@ public class TestCRUDByXmlMapper {
 		System.out.println(retResult);
 		
 	}
+	@Test
+	public void testAdd2(){
+		SqlSession sqlSession = MyBatisUtil.getSqlSession(true);
+		
+		String statement = "com.mybatis.mapping.userMapper.addUser2";
+		User user = new User();
+		user.setName("用户abc");
+		user.setAge(23);
+		//执行插入操作
+		int retResult = sqlSession.insert(statement,user);
+		//手动提交
+		//使用SqlSession执行完SQl之后要关闭SqlSession
+		sqlSession.close();
+		System.out.println(retResult);
+		
+	}
 	
 	@Test
 	public void testUpdate(){

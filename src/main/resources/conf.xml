@@ -30,6 +30,7 @@
 	<mapper resource="com/mybatis/mapping/orderMapper.xml"/>
 	<mapper resource="com/mybatis/mapping/classMapper.xml" />
 	<mapper resource="com/mybatis/mapping/classMapper2.xml" />
+	<mapper resource="com/mybatis/mapping/userMapper2.xml" />
 	</mappers>
 
 	
